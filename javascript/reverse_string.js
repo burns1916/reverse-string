@@ -1,5 +1,6 @@
 function reverseString(str) {
   // type your code here
+  return (str === "") ? "" : reverseString(str.substr(1)) + str.charAt(0)
 }
 
 if (require.main === module) {
@@ -16,4 +17,5 @@ if (require.main === module) {
 module.exports = reverseString;
 
 // Please add your pseudocode to this file
+
 // And a written explanation of your solution
